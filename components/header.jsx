@@ -1,4 +1,4 @@
-import {Show, SignInButton,SignUpButton, UserButton } from '@clerk/nextjs'
+import {Show, SignInButton,SignOutButton,SignUpButton, UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const Header = () => {
@@ -13,6 +13,7 @@ const Header = () => {
       {/* Replaces <SignedIn> */}
       <Show when="signed-in">
         <UserButton />
+        <SignOutButton/>
       </Show>
     </div>
   )
